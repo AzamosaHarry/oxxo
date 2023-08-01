@@ -1,0 +1,467 @@
+.app {
+  width: 100%;
+}
+.app_header {
+  height: 10vh;
+  width: 100%;
+  background: url('./bg.jpg');
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  color: white;
+  font-size: 60px;
+  margin-left: auto;
+  margin-right: 20px;
+    animation: arrowone 3s linear infinite;
+    animation-delay: 0;
+}
+.app_header > img{
+  object-fit: contain;
+  height: 90px;
+  padding: 15px;
+}
+.app_body {
+  min-height: 80vh;
+  width: 100%;
+  background: url('./bg.jpg');
+  padding: 10vh 20%;
+}
+.side {
+  position: absolute;
+  top: 40vh;
+  left: 85%;
+  transform: rotateZ(90deg);
+}
+.side > h3{
+  color: #323232;
+  font-size: 30px;
+}
+.side > h1{
+  color: #323232;
+  font-size: 50px;
+}
+.app_body_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.app_body_header > h1{
+  font-size: 90px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+.app_body_header > h3{
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: -20px;
+  margin-bottom: 0;
+  color: lightgreen;
+  font-family: 'Rock Salt';
+}
+.app_footer {
+  min-height: 50vh;
+  background: #191919;
+  padding: 4% 20%;
+}
+.design_with_oxxo > h2{
+  color: #323232;
+  font-size: 70px;
+  margin: 0;
+  font-weight: 700;
+}
+.design_with_oxxo > h1{
+  color: white;
+  font-size: 90px;
+  margin: 0;
+  margin-top: -20px;
+  font-weight: 900;
+}
+.design_with_oxxo > p{
+  color: #858585;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.footnote > hr {
+  border: 0.5px solid #323232;
+  margin: 50px 0;
+}
+.footnote > p {
+  color: #858585;
+}
+.footnote > div {
+  display: flex;
+  align-items: center;
+}
+.footnote_location {
+  width: 25%;
+}
+.footnote_location > h1{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+.footnote_location > p{
+  color: #858585;
+  font-size: 13px;
+}
+.footnote_location > h3{
+  color: red;
+  font-weight: 200;
+  font-size: 15px;
+}
+.footer_email {
+  margin-left: auto;
+  width: 40%;
+}
+.footer_email > input{
+  width: 100%;
+  border: 0;
+  border-bottom: 0.5px solid #323232;
+  padding: 20px 0;
+  font-size: 20px;
+  background-color: #191919;
+  color: white;
+}
+.footer_email > input:focus{
+  outline: none;
+}
+
+.update_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.update_body_div{
+  display: flex;
+  margin-bottom: 40px;
+}
+.update_body_div h1 {
+  font-weight: 500;
+  font-size: 12.5px;
+  color: gray;
+}
+.update_body_div1{
+  margin-right: 50px;
+  width: 40px;
+  height: auto;
+  border-radius: 20px;
+  border: 2px dashed white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.update_body_div2.next{
+  border: 2px dashed white
+}
+.update_body_div2{
+  margin-left: 50px;
+  width: 40px;
+  height: auto;
+  border-radius: 20px;
+  border: 2px dashed #858585;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 60vh;
+}
+.container_form  {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  height: 100%;
+  justify-content: center;
+  align-items: start;
+  margin-left: 10%;
+}
+.container_form > h2 {
+  color: #323232;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.container_form > label {
+  color: #858585;
+  font-weight: 400;
+  font-size: 13.5px
+}
+.container_form > input {
+  border: 1.5px solid lightgray;
+  border-radius: 2.5px;
+  height: 40px;
+  margin: 15px 0;
+  width: 80%;
+  padding: 20px 10px;
+
+}
+.container_form > input:focus {
+  outline: none;
+
+}
+.container_form > button {
+  height: 46px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: white;
+  color: #003333;
+  border: 0.5px solid lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.container_form > button:hover {
+  color: #ffcc00;
+}
+.container_form > div > button {
+  height: 46px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: #fe4201;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  margin-top: 20px;
+}
+#container_form_button {
+  display: none;
+  height: 46px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: white;
+  border: 1.5ccd    px solid #003333;
+  color: #003333;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+.container_form > div > button:hover {
+  background-color: #003333
+}
+.form_container {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+.sign_in_container {
+  width: 50%;
+  z-index: 2;
+  left: 0;
+}
+.sign_up_container {
+  left: 0;
+  width: 50%;
+  z-index: 1
+}
+.update_city {
+  border-radius:2px; 
+  height:40px; 
+  border:1.5px solid lightgray; 
+  width:80%;
+  padding:10px;
+  font-weight:400; 
+  border-radius:0.5px;
+  margin-bottom: 15px;
+}
+.overlay_container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;    
+}
+.overlay {
+  color: white;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+.overlay_panel {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+.overlay_left {
+  background: url('./alice-donovan-rouse-yu68fUQDvOI-unsplash.jpg');
+  background-size: cover;
+  right: 0;
+  transform: translateX(0%);
+}
+.overlay_left > h3{
+  font-weight: 400;
+  margin-top: 0;
+  font-size: 17px;
+  color: lightgray
+}
+.overlay_right {
+  background: url('./steve-johnson-3Sf_G9m0gcQ-unsplash.jpg');
+  background-size: cover;
+
+  transform: translateX(0%);
+  text-align: center;
+}
+.overlay_right > h1{
+  transform: translateX(0%);
+}
+.overlay_right >h3{
+  font-weight: 400;
+  margin-top: 0;
+  font-size: 17px;
+  color: lightgray
+}
+.overlay_right > button{
+  height: 46px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: white;
+  color: #003333;
+  border: 0.5px solid lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.overlay_right > button:hover{
+  color: #fe4201
+}
+
+/* Animation */
+
+/* move signin panel to the right */
+
+.container.right_panel_active .sign_in_container{
+  transform: translateX(100%);
+}
+
+/* move overlay to left*/
+
+.container.right_panel_active .overlay_container {
+  transform: translateX(-100%);
+}
+
+/* bring signup over sign in */
+
+.container.right_panel_active .sign_up_container{
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+}
+/* move overlay back to right*/
+
+.container.right_panel_active .overlay {
+  transform: translateX(50%);
+}
+.container.right_panel_active .overlay_left {
+  transform: translateX(0);
+}
+.label {
+  margin-bottom: 15px;
+}
+@keyframes arrowone {
+  0% { transform: rotateZ(0deg); }
+  100% {transform: rotateZ(360deg);}
+}
+@media all and (max-width: 600px ) {
+  .update_body {
+      width: 100%;
+  }
+  .container {
+      width: 90%;
+  }
+  .container_form  {
+      width: 100%;
+      margin-left: 0;
+  }
+  .container_form > input {
+      width: 100%;
+  }
+  .container_form  {
+      padding: 0 10px;
+  }
+  .overlay_container {
+      display: none;
+  }
+  .form_container {
+      display: flex;
+      width: 200%;
+  }
+  .sign_in_container {
+      width: 100%;
+  }
+  .sign_up_container {
+      width: 100%;
+  }
+  .container.right_panel_active .sign_in_container{
+      transform: translateX(0);
+  }
+  .container.right_panel_active .sign_up_container{
+      transform: translateX(0);
+  }
+  #container_form_button {
+      display: inline-block
+  }
+  .update_city {
+      width:100%;
+  }
+  .app_body {
+    padding: 10vh 2%;
+  }
+  .app_body_header > h3{
+    text-align: center;
+  }
+  .app_footer {
+    padding: 2%;
+  }
+  .footnote > div {
+    flex-direction: column;
+    align-items: start;
+  }
+  .footnote_location {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer_email {
+    margin-left: 0;
+    width: 100%;
+  }
+  .app_body_header > h1{
+    font-size: 70px;
+  }
+  .design_with_oxxo > h1{
+    font-size: 70px;
+  }
+  .side {
+    display: none;
+  }
+}
